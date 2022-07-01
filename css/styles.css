@@ -11,10 +11,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-
-
-
-
 .logo-style {
   color: var(--accent-color);
 }
@@ -27,25 +23,38 @@ body {
   letter-spacing: 0.03em;
   color: #000000;
   margin: auto 95px auto 215px;
-    text-decoration: none;
 }
 
-
-.header-list,
-.header-contacts {
+.header-contacts,
+.nav-list,
+.benefits-list,
+.our-job-item,
+.our-job-item-last,
+.our-team-list,
+.contacts-link,
+.address,
+.button-list,
+.portfolio-list {
   list-style: none;
 }
 
-.contacts-link {
+.logo,
+.contacts-link,
+.header-contacts,
+.footer-logo,
+.contacts-link-header,
+.address-mail,
+.address-tel {
   text-decoration: none;
-    font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-      color: var(--secondary-color);
 }
 
-
+.contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
 
 .contacts-link-header {
   font-weight: 500;
@@ -55,13 +64,12 @@ body {
   color: var(--pimary-color);
 }
 
-
 .contacts-link-header:hover,
 .contacts-link-header:focus {
   color: var(--accent-color);
 }
 
- .active-page {
+.active-page {
   color: var(--accent-color);
 }
 
@@ -70,15 +78,10 @@ body {
   color: var(--accent-color);
 }
 
-
-
-
-
 .hero {
   text-align: center;
   background-color: #2f303a;
   box-sizing: border-box;
-
 }
 
 .hero-title {
@@ -105,7 +108,7 @@ body {
 }
 
 .hero .button {
- font-family: inherit;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -116,13 +119,12 @@ body {
   cursor: pointer;
   width: 200px;
   height: 50px;
-
   border-radius: 4px;
   border: none;
 }
 
-
-.benefits-hiden, .title-hiden {
+.benefits-hiden,
+.title-hiden {
   display: none;
 }
 
@@ -136,19 +138,15 @@ body {
 }
 
 .benefits-text {
- 
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--pimary-color);
 }
 
-
-
 /* Чем мы занимаемся */
 
 .our-job-title {
-
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -158,50 +156,37 @@ body {
 
 .our-job-list {
   display: flex;
- 
 }
 
 .our-job-item {
   margin-right: 30px;
-  list-style: none;
 }
 
-.our-job-item-last {
-  list-style: none;
-}
+/*.our-job-item-last {}*/
 
 /* our team */
-
 /* Наша команда */
 
 .our-team {
-
   background-color: #f5f4fa;
 }
 
 .our-team-title {
-  
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-
   color: var(--secondary-color);
 }
 
-
-.our-team-item, .our-team-item-last {
-
+.our-team-item,
+.our-team-item-last {
   background: #ffffff;
- 
 }
 
-
-
 .our-team-subtitle {
-
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
@@ -221,14 +206,10 @@ body {
 .footer-logo {
   font-family: "Raleway";
   font-size: 26px;
-  line-height: 1.19px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
-
   color: #fff;
-  text-decoration: none;
 }
-
-
 
 .post-adress {
   list-style: none;
@@ -237,7 +218,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
@@ -281,12 +262,12 @@ body {
 /* Портфолио */
 /*список кнопок фильтра*/
 
-
 .cards {
   margin-bottom: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
 }
+
 .filter-button {
   font-family: "Roboto";
   font-weight: 500;
@@ -299,8 +280,8 @@ body {
   height: 38px;
   color: var(--secondary-color);
   border-radius: 4px;
-  
 }
+
 .filter-button:hover,
 .filter-button:focus {
   background: var(--accent-color);
@@ -308,16 +289,15 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 .pf-title {
- 
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
   color: var(--secondary-color);
 }
+
 .pf-text {
-  
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
