@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <!--  дз2-9.35-->
+    <!--  дз23.38-->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,24 +26,26 @@
       <nav class="site-nav">
         <ul class="nav-list">
           <li>
-            <a href="./index.html" class="li-margin">Студия</a>
+            <a href="./index.html" class="active-page contacts-link">Студия</a>
           </li>
           <li>
-            <a href="./portfolio.html" class="active-page li-margin"
-              >Портфолио</a
-            >
+            <a href="./portfolio.html" class="contacts-link">Портфолио</a>
           </li>
-          <li><a href="#contacts">Контакты</a></li>
+          <li><a href="#contacts" class="contacts-link">Контакты</a></li>
         </ul>
       </nav>
 
       <ul class="header-contacts">
         <li>
-          <a href="mailto:info@devstudio.com" class="li-margin"
+          <a href="mailto:info@devstudio.com" class="contacts-link-header"
             >info@devstudio.com</a
           >
         </li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li>
+          <a href="tel:+380961111111" class="contacts-link-header"
+            >+38 096 111 11 11</a
+          >
+        </li>
       </ul>
     </header>
     <main>
@@ -66,9 +68,6 @@
             <button type="button" class="filter-button">Маркетинг</button>
           </li>
         </ul>
-      </section>
-      <!--секция елементов портфолио-->
-      <section>
         <ul class="portfolio-list">
           <li class="cards">
             <img src="./images/portfolio1.jpg" alt="Веб-сайт" width="370" />

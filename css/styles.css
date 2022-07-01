@@ -1,4 +1,4 @@
-/*9.35*/
+/*3.38*/
 :root {
   --pimary-color: #757575;
   --secondary-color: #212121;
@@ -6,30 +6,14 @@
 }
 
 body {
-  /*боди рамка, потом удалить*/
-  border-style: none;
-  /*ширина  страницы*/
-  width: 1600px;
-  /* нулевые вертикальные отступы и автоматические горизонтальные */
-  margin: 0 auto;
-  font-family: "roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--pimary-color);
   letter-spacing: 0.03em;
 }
 
-.header {
-  width: 1600px;
-  height: 80px;
-  /*горизонталь*/
-  display: flex;
-  /*тип блочной модели элемента*/
-  box-sizing: border-box;
-}
 
-.header a,
-footer a {
-  text-decoration: none;
-}
+
+
 
 .logo-style {
   color: var(--accent-color);
@@ -37,55 +21,33 @@ footer a {
 
 .logo {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
   margin: auto 95px auto 215px;
+    text-decoration: none;
 }
 
-.header-nav {
-  margin: auto 330px auto 0;
-}
 
 .header-list,
 .header-contacts {
-  padding-inline-start: 0px;
   list-style: none;
-  display: flex;
 }
 
-.header-contacts {
-  margin: auto 215px auto 0;
-  box-sizing: border-box;
+.contacts-link {
+  text-decoration: none;
+    font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: var(--secondary-color);
 }
 
-.site-nav {
-  margin: auto 330px auto 0;
-}
 
-.nav-list,
-.header-contacts {
-  list-style: none;
-  display: flex;
-  padding-inline-start: 0px;
-}
 
-.li-margin {
-  margin-right: 50px;
-}
-
-.site-nav a {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--secondary-color);
-}
-
-.header-contacts a {
+.contacts-link-header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -93,33 +55,30 @@ footer a {
   color: var(--pimary-color);
 }
 
-.header-contacts {
-  margin: auto 215px auto 0;
-}
 
-.site-nav a:hover,
-.site-nav a:focus {
+.contacts-link-header:hover,
+.contacts-link-header:focus {
   color: var(--accent-color);
 }
 
-.site-nav .active-page {
+ .active-page {
   color: var(--accent-color);
 }
 
-.header-contacts a:hover,
-.header-contacts a:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
+
+
+
+
 
 .hero {
-  width: 1600px;
-  height: 600px;
   text-align: center;
-  padding: 200px 450px;
   background-color: #2f303a;
   box-sizing: border-box;
-  margin-bottom: 95px;
-  background-size: cover;
+
 }
 
 .hero-title {
@@ -146,11 +105,11 @@ footer a {
 }
 
 .hero .button {
+ font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: var(--accent-color);
@@ -162,30 +121,12 @@ footer a {
   border: none;
 }
 
-.benefits {
-  margin-top: 0px;
 
-  margin-right: 215px;
-  margin-bottom: 101px;
-  margin-left: 215px;
-}
-
-.benefits-list {
-  list-style: none;
-  display: flex;
-  padding-left: 0px;
-  height: 101px;
-}
-
-.benefits-hiden,
-.title-hiden {
+.benefits-hiden, .title-hiden {
   display: none;
 }
 
 .benefits-title {
-  margin-top: 0px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -195,40 +136,19 @@ footer a {
 }
 
 .benefits-text {
-  width: 270px;
-  height: 75px;
-  margin-top: 10px;
-  margin-bottom: 0px;
-  margin-right: 30px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
+ 
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--pimary-color);
 }
 
-.benefits-item {
-  margin-right: 30px;
-  width: 270px;
-}
 
-.benefits-item-last {
-  margin-right: 0px;
-  width: 270px;
-  height: 101px;
-}
 
 /* Чем мы занимаемся */
-.our-job {
-  margin: 0 215px 95px 215px;
-}
 
 .our-job-title {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
+
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -238,9 +158,7 @@ footer a {
 
 .our-job-list {
   display: flex;
-  width: 1170px;
-  /*height: 386px;*/
-  padding-left: 0px;
+ 
 }
 
 .our-job-item {
@@ -250,8 +168,6 @@ footer a {
 
 .our-job-item-last {
   list-style: none;
-
-  margin-right: 0px;
 }
 
 /* our team */
@@ -259,108 +175,60 @@ footer a {
 /* Наша команда */
 
 .our-team {
-  width: 1600px;
-  box-sizing: border-box;
-  padding-top: 95px;
-  padding-right: 215px;
-  padding-bottom: 95px;
-  padding-left: 215px;
+
   background-color: #f5f4fa;
 }
 
 .our-team-title {
-  font-weight: 700;
+  
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  margin-top: 0px;
-  margin-bottom: 50px;
+
   color: var(--secondary-color);
 }
 
-.our-team-list {
-  padding-left: 0px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  display: flex;
+
+.our-team-item, .our-team-item-last {
+
+  background: #ffffff;
+ 
 }
 
-.our-team-item {
-  /* width: 270px;
-    height: 368px;
-    left: 215px;
-    top: 1635px;*/
-  text-align: center;
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  list-style: none;
-  margin-right: 30px;
-}
 
-.our-team-item-last {
-  width: 270px;
-  height: 368px;
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  list-style: none;
-  margin-right: 0px;
-}
 
 .our-team-subtitle {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  margin-left: 60p;
-  font-family: "Roboto";
-  font-style: normal;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18px;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
 
 .our-team-text {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--pimary-color);
-  text-align: center;
 }
 
 .footer {
   background-color: #2f303a;
-  box-sizing: border-box;
-  padding: 60px 1150px 60px 215px;
 }
 
 .footer-logo {
   font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19px;
   letter-spacing: 0.03em;
-  /* margin-top: 0px;
-    margin-right: 0px;
-      margin-bottom: 20px;
-      margin-left: 0px;*/
+
   color: #fff;
+  text-decoration: none;
 }
 
-.address {
-  list-style: none;
-  padding-left: 0px;
-  margin-bottom: 0px;
-}
+
 
 .post-adress {
   list-style: none;
@@ -412,31 +280,8 @@ footer a {
 
 /* Портфолио */
 /*список кнопок фильтра*/
-.button-list {
-  display: flex;
-  list-style: none;
-  margin-top: 95px;
-  margin-right: 495px;
-  margin-bottom: 50px;
-  margin-left: 495px;
-  padding-inline-start: 0;
-  justify-content: space-between;
-}
 
-.portfolio-list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  width: 1170px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
-  justify-content: space-between;
-  margin-top: 34px;
-  margin-right: 215px;
-  margin-bottom: 95px;
-  margin-left: 215px;
-}
+
 .cards {
   margin-bottom: 30px;
   background: #ffffff;
@@ -444,7 +289,6 @@ footer a {
 }
 .filter-button {
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -455,8 +299,7 @@ footer a {
   height: 38px;
   color: var(--secondary-color);
   border-radius: 4px;
-  padding-inline-start: 22px;
-  padding-inline-end: 22px;
+  
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -466,9 +309,7 @@ footer a {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .pf-title {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
+ 
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -476,9 +317,7 @@ footer a {
   color: var(--secondary-color);
 }
 .pf-text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
+  
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
